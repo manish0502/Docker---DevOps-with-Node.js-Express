@@ -9,7 +9,7 @@ docker rm <cantainerID> -f
 ## build the image
    docker build -t my-image .
 
-##creating conatiner from the images
+## creating conatiner from the images
 
   docker run -v $(pwd):/app -p 3000:3000 -d --name my-app my-image
 
