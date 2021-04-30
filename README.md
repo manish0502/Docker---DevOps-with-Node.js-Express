@@ -13,3 +13,6 @@ docker rm <cantainerID> -f
 
   docker run -v $(pwd):/app -p 3000:3000 -d --name my-app my-image
 
+## Running the server
+
+   http://localhost:3000/
