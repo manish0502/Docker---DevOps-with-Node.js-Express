@@ -13,7 +13,7 @@ docker rm (cantainerID) -f
 
   docker run -v $(pwd):/app -p 3000:3000 -d --name my-app my-image
 
-## we can do volume maping (read only)
+## we can do bind mount (read only)
 
  docker run -v $(pwd):/app:ro -v /app/node_modules  -p 3000:3000 -d --name my-app my-image
 
