@@ -4,7 +4,7 @@ Devops , docker , Node &amp; Express
 
 To run this 
 
-docker rm <cantainerID> -f
+docker rm (cantainerID) -f
 
 ## build the image
    docker build -t my-image .
