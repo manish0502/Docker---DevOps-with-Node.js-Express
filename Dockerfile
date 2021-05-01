@@ -13,12 +13,23 @@ COPY package.json .
 
 #it will install the npm packages
 
-RUN npm install
+# RUN npm install 
+
+ARG NODE_ENV
+
+RUN if[ "$NODE_ENV" = "development" ]; \
+        then npm install; \
+        else npm install --only=production; \
+        fi
+
 
 # copy all the file inside the docker images
 COPY . ./
-EXPOSE 3000
+
+ENV PORT 3000
+
+EXPOSE $PORT
 
 #this cmd is used to run the container
 
-CMD ["npm","run","dev"]
+CMD ["node","index.js"]
