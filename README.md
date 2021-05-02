@@ -30,4 +30,4 @@ docker rm (cantainerID) -f
    docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
    
  ## next
-   docker logs <ID>
+   docker logs (ID)
