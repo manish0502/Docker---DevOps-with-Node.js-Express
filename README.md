@@ -20,3 +20,12 @@ docker rm (cantainerID) -f
 ## Running the server
 
    http://localhost:3000/
+
+
+
+## step 1 : To start the container
+  docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+  
+## step-2 : to down
+   docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+   docker logs <ID>
